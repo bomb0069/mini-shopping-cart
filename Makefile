@@ -3,7 +3,7 @@ backend: code_analysis_backend run_unittest_backend run_integratetest_backend bu
 run_robot_selinium: 
 	robot test/ui/shopping_cart_success.robot
 
-run_robot_requests:
+run_robot_request:
 	sleep 5
 	cat tearup/init.sql | docker exec -i store-database /usr/bin/mysql -u sealteam --password=sckshuhari --default-character-set=utf8  toy
 	robot test/api/checkout-success-template.robot
