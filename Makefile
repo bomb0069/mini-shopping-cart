@@ -4,7 +4,7 @@ run_robot_selinium:
 	robot test/ui/shopping_cart_success.robot
 
 run_robot_request:
-	sleep 20
+	sleep 25
 	robot test/api/checkout-success-template.robot
 
 code_analysis_backend:
